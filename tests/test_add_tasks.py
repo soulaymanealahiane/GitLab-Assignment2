@@ -1,7 +1,7 @@
 """Soulaymane's tests for task creation."""
 import pytest
 
-from todo.tasks import add_task
+from todo.tasks import Task, add_task
 
 
 def test_add_tasks_assigns_unique_ids_and_preserves_existing_tasks():
@@ -27,3 +27,10 @@ def test_add_task_rejects_blank_title_without_changing_tasks():
     with pytest.raises(ValueError, match="cannot be empty"):
         add_task(tasks, "   ")
     assert tasks == [existing]
+
+
+def test_add_task_allocates_id_after_nonconsecutive_existing_ids():
+    tasks = [Task(id=2, title="Read notes"), Task(id=7, title="Submit assignment")]
+    task = add_task(tasks, "Review feedback")
+    assert task.id == 8
+    assert [item.id for item in tasks] == [2, 7, 8]
