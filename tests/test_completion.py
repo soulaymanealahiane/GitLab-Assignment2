@@ -38,3 +38,13 @@ def test_unknown_id_raises_lookup_error_without_changing_tasks(operation):
 
     assert tasks == [task]
     assert task.completed is True
+
+
+@pytest.mark.parametrize("operation", [complete_task, reopen_task])
+def test_unknown_id_in_empty_list_raises_lookup_error(operation):
+    tasks = []
+
+    with pytest.raises(LookupError, match="ID 9"):
+        operation(tasks, 9)
+
+    assert tasks == []
