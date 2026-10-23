@@ -2,7 +2,7 @@
 
 A simple Python To-Do List built from scratch for Assignment 2.
 
-Project status: Task filtering and the command-line menu are ready.
+Project status: Task creation, completion, and filtering are ready.
 
 ## Team and feature plan
 
