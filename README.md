@@ -2,7 +2,7 @@
 
 A simple Python To-Do List built from scratch for Assignment 2.
 
-Project status: Development in progress.
+Project status: Task creation and completion are ready.
 
 ## Team and feature plan
 
