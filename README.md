@@ -20,7 +20,7 @@ Review rotation: Aya reviews Soulaymane, Rim reviews Aya, and Soulaymane reviews
 
 ## Run
 
-Use Python 3.12 or later. Once the feature PRs are merged:
+Use Python 3.12 or later:
 
 ```sh
 python -m pip install -r requirements.txt
@@ -45,8 +45,8 @@ https://soulaymanealahiane.github.io/GitLab-Assignment2/
 
 ```text
 todo/                 Python application
-tests/                pytest unit tests added on feature branches
-.github/workflows/    test workflow added on Soulaymane's feature branch
+tests/                pytest unit tests
+.github/workflows/    automated pytest workflow
 docs/                 GitHub Pages project page
-report/               one final group PDF after the group workflow is complete
+report/               group report PDF
 ```

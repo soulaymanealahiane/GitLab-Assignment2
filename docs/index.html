@@ -20,7 +20,12 @@
     <li>Rim Zemmouri: filter tasks and integrate the command-line menu.</li>
   </ul>
   <h2>Implemented features</h2>
-  <p>Add tasks with unique IDs. Titles are trimmed, and blank titles are rejected. New tasks start as pending.</p>
+  <p>All three team features are integrated.</p>
+  <ul>
+    <li>Add tasks with unique IDs and validated, trimmed titles.</li>
+    <li>Complete tasks and reopen them as pending.</li>
+    <li>List all tasks, pending tasks, or completed tasks.</li>
+  </ul>
   <h2>Running the project</h2>
   <p>Use Python 3.12 or later:</p>
   <pre>git clone https://github.com/soulaymanealahiane/GitLab-Assignment2.git
@@ -29,7 +34,7 @@ python -m pip install -r requirements.txt
 python -m todo
 python -m pytest</pre>
   <p>Tasks are stored in memory for the current session.</p>
-  <p>Choose 1 to add a task or 0 to exit. Completion and filtering are assigned to the other team members.</p>
+  <p>Choose 1 to add a task, 2 to complete a task, 3 to reopen a task, 4 to list all tasks, 5 to list pending tasks, 6 to list completed tasks, or 0 to exit. Completion and reopening ask for the task ID shown in the lists.</p>
   <p><a href="https://github.com/soulaymanealahiane/GitLab-Assignment2">GitHub repository</a></p>
 </body>
 </html>
