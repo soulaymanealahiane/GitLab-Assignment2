@@ -13,23 +13,44 @@
 <body>
   <h1>To-Do List</h1>
   <p>Assignment 2 group project. Theme: To-Do List.</p>
+
   <h2>Team and assigned features</h2>
   <ul>
     <li>Soulaymane Alahiane: add tasks with validated titles and unique IDs.</li>
     <li>Aya Drissi: complete and reopen tasks.</li>
     <li>Rim Zemmouri: filter tasks and integrate the command-line menu.</li>
   </ul>
+
   <h2>Implemented features</h2>
-  <p>Add tasks with unique IDs. Titles are trimmed, and blank titles are rejected. New tasks start as pending.</p>
+  <ul>
+    <li>Add tasks with unique IDs. Titles are trimmed, blank titles are rejected, and new tasks start as pending.</li>
+    <li>Complete tasks and reopen completed tasks using their IDs.</li>
+    <li>Filter tasks to display all tasks, pending tasks, or completed tasks. The original task order is preserved.</li>
+    <li>Use a command-line menu to manage tasks, with messages for invalid choices, invalid input, and missing task IDs.</li>
+  </ul>
+
   <h2>Running the project</h2>
-  <p>Use Python 3.12 or later:</p>
+  <p>Use Python 3.12 or later. Run these commands from the project folder:</p>
   <pre>git clone https://github.com/soulaymanealahiane/GitLab-Assignment2.git
 cd GitLab-Assignment2
 python -m pip install -r requirements.txt
 python -m todo
 python -m pytest</pre>
-  <p>Tasks are stored in memory for the current session.</p>
-  <p>Choose 1 to add a task or 0 to exit. Completion and filtering are assigned to the other team members.</p>
+  <p>The first commands download the project and install its dependencies. Run <code>python -m todo</code> to open the menu, or <code>python -m pytest</code> to run the tests.</p>
+
+  <h2>Command-line menu</h2>
+  <ul>
+    <li>1: Add a task.</li>
+    <li>2: Complete a task by entering its ID.</li>
+    <li>3: Reopen a task by entering its ID.</li>
+    <li>4: List all tasks.</li>
+    <li>5: List pending tasks.</li>
+    <li>6: List completed tasks.</li>
+    <li>0: Exit the program.</li>
+  </ul>
+  <p>Tasks are stored in memory for the current session. They are not saved when the program exits.</p>
+
   <p><a href="https://github.com/soulaymanealahiane/GitLab-Assignment2">GitHub repository</a></p>
 </body>
 </html>
+```
